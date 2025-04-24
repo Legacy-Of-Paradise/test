@@ -1,5 +1,5 @@
-defaultWindowTitle: Space Station 14
-windowIconSet: /Textures/Logo/icon
-splashLogo: /Textures/Logo/logo-ru.png # RU-Localization
+defaultWindowTitle: Legacy of Paradise # LOP edit
+windowIconSet: /Textures/_NewParadise/Logo/icon # LOP edit
+splashLogo: /Textures/_NewParadise/Logo/logo.png # LOP edit
 
 # PJB PLEASE
