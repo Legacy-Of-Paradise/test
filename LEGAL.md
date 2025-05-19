@@ -6,11 +6,11 @@ The Authors retain all copyright to their respective work here submitted.
 
 ## Code license
 
-Content contributed to this repository after commit 47c7281645525a21a2519befa95b89e062334076 is licensed under the GNU Affero General Public License version 3.0, unless otherwise stated. See `LICENSE-AGPLv3.txt`.
+Content contributed to this repository after commit d6ce082f31f561a49ac1a6a27fab10cd7235d4d8 is licensed under the GNU Affero General Public License version 3.0, unless otherwise stated. See `LICENSE-AGPLv3.txt`.
 
-Content contributed to this repository before commit 47c7281645525a21a2519befa95b89e062334076 is licensed under the MIT license, unless otherwise stated. See `LICENSE-MIT.txt`.
+Content contributed to this repository before commit d6ce082f31f561a49ac1a6a27fab10cd7235d4d8 is licensed under the MIT license, unless otherwise stated. See `LICENSE-MIT.txt`.
 
-[47c7281645525a21a2519befa95b89e062334076](https://github.com/Legacy-Of-Paradise/main-erp/commit/47c7281645525a21a2519befa95b89e062334076) was pushed on Sep 21, 2024, 12:30 AM GMT+3
+[d6ce082f31f561a49ac1a6a27fab10cd7235d4d8](https://github.com/Legacy-Of-Paradise/main-erp/commit/d6ce082f31f561a49ac1a6a27fab10cd7235d4d8) was pushed on May 15, 2025, 03:54 PM GMT+3
 
 ## Warranty
 
