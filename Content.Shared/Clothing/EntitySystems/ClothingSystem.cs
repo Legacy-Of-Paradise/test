@@ -1,20 +1,30 @@
 using Content.Shared.Clothing.Components;
 using Content.Shared.Hands.Components;
 using Content.Shared.Hands.EntitySystems;
+using Content.Shared.Humanoid;
 using Content.Shared.Interaction.Events;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
 using Content.Shared.Item;
 using Content.Shared.Strip.Components;
 using Robust.Shared.GameStates;
+using Content.Shared.Tag; // LOP edit
 
 namespace Content.Shared.Clothing.EntitySystems;
 
 public abstract class ClothingSystem : EntitySystem
 {
     [Dependency] private readonly SharedItemSystem _itemSys = default!;
+    [Dependency] private readonly SharedHumanoidAppearanceSystem _humanoidSystem = default!; // LOP edit
     [Dependency] private readonly InventorySystem _invSystem = default!;
     [Dependency] private readonly SharedHandsSystem _handsSystem = default!;
+    [Dependency] private readonly HideLayerClothingSystem _hideLayer = default!;
+    // LOP edit start
+    [Dependency] private readonly TagSystem _tagSystem = default!;
+
+    [ValidatePrototypeId<TagPrototype>]
+    private const string TailTag = "HidesTail";
+    // LOP edit end
 
     public override void Initialize()
     {
@@ -85,6 +95,12 @@ public abstract class ClothingSystem : EntitySystem
         component.InSlot = args.Slot;
         component.InSlotFlag = args.SlotFlags;
 
+        // LOP edit start
+        if (_tagSystem.HasTag(args.Equipment, TailTag))
+        {
+            _humanoidSystem.SetLayerVisibility(args.Equipee, HumanoidVisualLayers.Tail, false);
+        }
+        // LOP edit end
         if ((component.Slots & args.SlotFlags) == SlotFlags.NONE)
             return;
 
@@ -108,6 +124,12 @@ public abstract class ClothingSystem : EntitySystem
 
         component.InSlot = null;
         component.InSlotFlag = null;
+        // LOP edit start
+        if (_tagSystem.HasTag(args.Equipment, TailTag))
+        {
+            _humanoidSystem.SetLayerVisibility(args.Equipee, HumanoidVisualLayers.Tail, true);
+        }
+        // LOP edit end
     }
 
     private void OnGetState(EntityUid uid, ClothingComponent component, ref ComponentGetState args)

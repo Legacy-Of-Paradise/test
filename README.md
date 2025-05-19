@@ -1,43 +1,57 @@
-<div class="header" align="center">
-<img alt="Space Station 14" width="880" height="300" src="https://raw.githubusercontent.com/space-wizards/asset-dump/de329a7898bb716b9d5ba9a0cd07f38e61f1ed05/github-logo.svg">
-</div>
+<p align="center"> <img alt="Legacy of Paradise" width="653" height="256" src="https://github.com/Legacy-Of-Paradise/main-erp/blob/master/Resources/Textures/_NewParadise/Logo/logo.png?raw=true" /></p>
 
-Space Station 14 это ремейк SS13, который работает на собственном движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
+Legacy of Paradise — это форк [Space Station 14](https://github.com/space-wizards/space-station-14), работающий на движке [Robust Toolbox](https://github.com/space-wizards/RobustToolbox), написанном на C#.
 
-Целью этого репозитория является хостинг ванильного сервера, на русском языке.
+Это основной репозиторий Legacy Of Paradise.
 
-## Наши ссылки
+Если вы хотите запустить сервер или создавать контент для LOP, то вам нужен именно этот репозиторий. В нём содержится как RobustToolbox, так и набор ресурсов для разработки новых контент-паков.
 
-[Discord](https://discord.gg/KtHkxwrFnU)
+## Ссылки
 
-## Ссылки оффициальных разработчиков
+[Discord](https://wiki.legacyofparadise.space/discord/) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/)
 
-<div class="header" align="center">
+## Документация/Вики
 
-[Website](https://spacestation14.com/) | [Discord](https://discord.ss14.io/) | [Forum](https://forum.spacestation14.com/) | [Mastodon](https://mastodon.gamedev.place/@spacestation14) | [Lemmy](https://lemmy.spacestation14.com/) | [Patreon](https://www.patreon.com/spacestation14) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Standalone Download](https://spacestation14.com/about/nightlies/)
+В нашей [вики](https://wiki.legacyofparadise.space/) есть документация по контенту LOP.
 
-</div>
+## Внесение вклада
 
-## Документация
+Мы рады принять вклад от любого участника. Присоединяйтесь к нашему Discord, если хотите помочь. У нас есть [список идей](https://wiki.legacyofparadise.space/discord/), которые можно реализовать, и любой желающий может их взять. Не бойтесь спрашивать, если вам нужна помощь!
 
-На официальном сайте с [документацией](https://docs.spacestation14.com/) имеется вся необходимая информация о контенте SS14, движке, дизайне игры и многом другом.
-Кроме того, информацию о лицензиях и авторстве можно найти на этих ресурсах:
-- [Robust 	](https://docs.spacestation14.com/en/specifications/robust-generic-attribution.html)
-- [Robust Station Image](https://docs.spacestation14.com/en/specifications/robust-station-image.html)
+## Сборка проекта.
 
-Также имеется много информации для начинающих разработчиков.
+### Зависимости
 
-## Контрибьютинг
+> - Git
+> - .NET SDK 9.0.x
 
-Если вы желаете помочь с решением проблем или добавлением нового функционала, вам нужно делать это в [оффициальный репозиторий](https://github.com/space-wizards/space-station-14). Так же там находится вся остальная информация по разработке и сборке билда.
+### Windows
 
-В этом репозитории вы можете помочь с переводом и проблемами, которые к нему относятся, посмотрев список [проблем](https://github.com/lzk228/space-axolotl-14/issues) или спросив в нашем дискорде.
+> 1. Клонируйте репо
+> 3. Запустите `Scripts/bat/buildAllDebug.bat` после каждого измения в C#.
+> 4. Запустите `Scripts/bat/runQuickAll.bat` для запуска клиента и сервера.
+> 5. Подключитесь к "localhost" в клиенте.
+
+### Linux
+
+> 1. Клонируйте репо
+> 3. Запустите `Scripts/sh/buildAllDebug.sh` после каждого изменения в C#.
+> 4. Запустите `Scripts/sh/runQuickAll.sh` для запуска клиента и сервера.
+> 5. Подключитесь к "localhost" в клиенте.
+
+### Основные решения проблем
+
+Попробуйте удалить папку bin и внутренности RobustToolBox.
 
 ## Лицензия
 
-Весь код репозитория лицензирован под [MIT](https://github.com/space-wizards/space-station-14/blob/master/LICENSE.TXT).
+Контент, внесенный в этот репозиторий после комита d6ce082f31f561a49ac1a6a27fab10cd7235d4d8 лицензируется под GNU Affero General Public License version 3.0, если не указано иное. См. `LICENSE-AGPLv3.txt`.
+Контент, внесенный в этот репозиторий до комита d6ce082f31f561a49ac1a6a27fab10cd7235d4d8 лицензируется под MIT, если не указано иное. См. `LICENSE-MIT.txt`.
 
-Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Метаданные для монтировки](https://github.com/space-wizards/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json) как пример.
+[d6ce082f31f561a49ac1a6a27fab10cd7235d4d8](https://github.com/Legacy-Of-Paradise/main-erp/commit/d6ce082f31f561a49ac1a6a27fab10cd7235d4d8) опубликован May 15, 2025, 03:54 PM GMT+3
 
-> [!NOTE]
-> Некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если вы хотите использовать этот проект в коммерческих целях.
+Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Пример](https://github.com/Legacy-Of-Paradise/main-erp/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
+
+Обратите внимание, что некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если вы хотите использовать этот проект в коммерческих целях.
+
+![Alt](https://repobeats.axiom.co/api/embed/51894b7102af659f0a2876d3930680c91cd302ca.svg "Repobeats analytics image")
